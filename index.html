@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">
-                <span class="logo-accent">TAX</span> GUY <span class="logo-sub">OKC</span>
+            <a href="#" class="logo" aria-label="Tax Guy OKC">
+                <img src="assets/tax-guy-logo-white.png" alt="Tax Guy OKC Logo" class="logo-img logo-light">
+                <img src="assets/tax-guy-okc-logo.png" alt="Tax Guy OKC Logo" class="logo-img logo-dark">
             </a>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
@@ -39,15 +41,40 @@
         <div class="hero-bg"></div>
         <div class="container hero-container flex-container reveal fade-up">
             <div class="hero-content">
-                <p class="hero-subtitle">Knowledge & Experience</p>
+                <p class="hero-badge">
+                    <span class="hero-badge-dot" aria-hidden="true"></span>
+                    Former IRS Agent
+                </p>
                 <h1 class="hero-title">Optimizing Your <span class="gradient-text">Financial Future</span></h1>
-                <p class="hero-description">"Save the stress. We handle your bookkeeping and tax chores." Expert tax preparation, back taxes resolution, and payroll services by a Former IRS Agent with over 30 years of experience.</p>
+                <p class="hero-description">"Save the stress. We handle your bookkeeping and tax chores." Expert tax preparation, back taxes resolution, and payroll services by a Former IRS Agent with 35 years of experience.</p>
                 <div class="hero-btns">
                     <a href="#contact" class="btn btn-primary">Book Consultation</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Stats Bar -->
+    <section class="stats" aria-label="Tax Guy OKC at a glance">
+        <div class="container stats-grid reveal fade-up">
+            <div class="stat-card">
+                <div class="stat-value">35<span class="stat-plus">+</span></div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card stat-card--accent">
+                <div class="stat-value">IRS</div>
+                <div class="stat-label">Former Agent</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">365</div>
+                <div class="stat-label">Open All Year</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value stat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <div class="stat-label">Client-Rated Service</div>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="section">
@@ -85,6 +112,50 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">Trusted in <span class="gradient-text">Oklahoma City</span></h2>
+                <p class="section-subtitle">Decades of relationships with small business owners, retirees, and families who needed someone in their corner.</p>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card reveal fade-up">
+                    <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-quote">Larry's the only CPA I've used since 2008. Knowledgeable, no nonsense, and he actually picks up the phone when you call.</blockquote>
+                    <footer class="testimonial-author">
+                        <span class="testimonial-name">Andre M.</span>
+                        <span class="testimonial-role">Small Business Owner</span>
+                    </footer>
+                </article>
+                <article class="testimonial-card reveal fade-up">
+                    <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-quote">I had three years of unfiled returns and was terrified to deal with it. Larry walked me through every step and got the IRS off my back. Worth every penny.</blockquote>
+                    <footer class="testimonial-author">
+                        <span class="testimonial-name">Patricia W.</span>
+                        <span class="testimonial-role">Retired Teacher</span>
+                    </footer>
+                </article>
+                <article class="testimonial-card reveal fade-up">
+                    <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-quote">Switched from a chain tax service two years ago. Cheaper, faster, and Larry found deductions my old guy missed. Wish I'd called him sooner.</blockquote>
+                    <footer class="testimonial-author">
+                        <span class="testimonial-name">James R.</span>
+                        <span class="testimonial-role">Restaurant Owner, Edmond</span>
+                    </footer>
+                </article>
+                <article class="testimonial-card reveal fade-up">
+                    <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-quote">Open all year is huge. I can call in July with a payroll question and get a real answer the same day. That's not normal in this industry.</blockquote>
+                    <footer class="testimonial-author">
+                        <span class="testimonial-name">Maria G.</span>
+                        <span class="testimonial-role">Property Manager</span>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Expert Profile Section -->
     <section id="expert" class="section">
         <div class="container expert-container flex-container">
@@ -93,7 +164,7 @@
                     <img src="assets/office-bg.png" alt="Executive Office" class="expert-image">
                 </div>
                 <div class="experience-badge">
-                    <span class="exp-years">30+</span>
+                    <span class="exp-years">35+</span>
                     <span class="exp-text">Years of<br>Experience</span>
                 </div>
             </div>
@@ -106,7 +177,7 @@
                     <span class="badge">Certified Public Accountant</span>
                 </div>
                 <p class="expert-bio">
-                    Knowledge and experience are the keys to quality tax services. With over 30 years of tax and accounting experience, specializing in dealings with the IRS here in Oklahoma City, Larry brings unparalleled peace of mind. Our firm does not employ temporary staff during tax season; we maintain an experienced, full-time staff year-round to ensure continuity.
+                    Knowledge and experience are the keys to quality tax services. With over 35 years of tax and accounting experience, specializing in dealings with the IRS here in Oklahoma City, Larry brings unparalleled peace of mind. Our firm does not employ temporary staff during tax season; we maintain an experienced, full-time staff year-round to ensure continuity.
                 </p>
                 <ul class="expert-highlights">
                     <li>
@@ -154,8 +225,8 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <a href="#" class="logo">
-                    <span class="logo-accent">TAX</span> GUY <span class="logo-sub">OKC</span>
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/tax-guy-okc-logo.png" alt="Tax Guy OKC Logo" class="logo-img">
                 </a>
                 <p class="footer-tagline">Navigating your tax prep, bookkeeping, and IRS problems with 35 years of trusted experience.</p>
             </div>
@@ -197,7 +268,11 @@
         </div>
     </footer>
 
-    <!-- Floating Pop-up -->
+    <!--
+        Floating Pop-up (disabled — auto-popup felt pushy and covered content).
+        Preserved markup so the SMS shortcode (sms:85100&body=TAXGUY) is recoverable
+        for the Contact section once Twilio carrier verification clears.
+
     <div class="floating-popup" id="floatingPopup">
         <button class="popup-close" id="popupClose" aria-label="Close popup">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -213,6 +288,8 @@
             </div>
         </div>
     </div>
+    -->
+    <!-- /Floating Pop-up -->
 
     <script src="script.js"></script>
 </body>
